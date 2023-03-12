@@ -18,4 +18,11 @@ spring:
     stream:
       function:
         definition: appCreatedEventListener;appUpdatedEventListener
+      bindings:
+        appCreatedEventListener-in-0:
+          destination: app.v1.event.app-created
+          group: scheduler
+        appUpdatedEventListener-in-0:
+          destination: app.v1.event.app-updated
+          group: scheduler
       
