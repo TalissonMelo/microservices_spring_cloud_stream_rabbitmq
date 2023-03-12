@@ -25,4 +25,11 @@ spring:
         appUpdatedEventListener-in-0:
           destination: app.v1.event.app-updated
           group: scheduler
-      
+      rabbit:
+        bindings:
+          appCreatedEventListener-in-0:
+            consumer:
+              auto-bind-dlq: true
+          appUpdatedEventListener-in-0:
+            consumer:
+              auto-bind-dlq: true
