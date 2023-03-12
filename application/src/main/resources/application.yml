@@ -14,3 +14,12 @@ spring:
     password: rabbitmq
     host: localhost
     port: 5672
+  cloud:
+    stream:
+      function: 
+        definition: appCreatedSupplier;appUpdatedSupplier
+      bindings:
+        appCreatedSupplier-out-0:
+          destination: app.v1.event.app-created
+        appUpdatedSupplier-out-0:
+          destination: app.v1.event.app-updated
