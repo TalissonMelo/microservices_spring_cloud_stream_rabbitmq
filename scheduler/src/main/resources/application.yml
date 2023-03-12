@@ -14,3 +14,8 @@ spring:
     host: localhost
     port: 5672
     username: rabbitmq
+  cloud:
+    stream:
+      function:
+        definition: appCreatedEventListener;appUpdatedEventListener
+      
