@@ -18,6 +18,9 @@ spring:
   datasource:
     url: jdbc:mysql://localhost:3306/aw_healthy_app?createDatabaseIfNotExist=true&serverTimezone=UTC
     username: root
+  sleuth:
+    sampler:
+      probability: 1.0
   rabbitmq:
     username: rabbitmq
     password: rabbitmq
