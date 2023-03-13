@@ -29,3 +29,12 @@ services:
       retries: 10
     networks:
       - default-network
+  zipkin-server:
+    image: openzipkin/zipkin:2.23.2
+    container_name: zipkin-server
+    networks:
+      - default-network
+    expose:
+      - '9411'
+    ports:
+      - '9411:9411'
