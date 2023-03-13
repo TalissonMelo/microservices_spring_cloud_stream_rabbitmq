@@ -1,7 +1,16 @@
 server:
-  port: 8082
+  port: 0 #Gera randomicamente uma porta aleatória.
+
+eureka:
+  client:
+    server-url:
+      defaultZone: http://localhost:8761/eureka
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value} }
 
 spring:
+  application:
+    name: ms-application
   jpa:
     hibernate:
       ddl-auto: update
