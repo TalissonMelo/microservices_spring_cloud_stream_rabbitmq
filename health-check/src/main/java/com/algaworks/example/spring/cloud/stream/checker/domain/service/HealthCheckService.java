@@ -1,15 +1,14 @@
 package com.algaworks.example.spring.cloud.stream.checker.domain.service;
 
-import com.algaworks.example.spring.cloud.stream.checker.domain.model.App;
-import com.algaworks.example.spring.cloud.stream.checker.domain.model.HealthCheckTaskResult;
-import com.algaworks.example.spring.cloud.stream.checker.domain.model.HealthCheckTask;
-import com.algaworks.example.spring.cloud.stream.checker.domain.model.valueobject.HealthCheckType;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.Validate;
 import org.springframework.stereotype.Service;
 
-import java.time.OffsetDateTime;
-import java.util.UUID;
+import com.algaworks.example.spring.cloud.stream.checker.domain.model.App;
+import com.algaworks.example.spring.cloud.stream.checker.domain.model.HealthCheckTask;
+import com.algaworks.example.spring.cloud.stream.checker.domain.model.HealthCheckTaskResult;
+import com.algaworks.example.spring.cloud.stream.checker.domain.model.valueobject.HealthCheckType;
+
+import lombok.extern.slf4j.Slf4j;
 
 @Service
 @Slf4j

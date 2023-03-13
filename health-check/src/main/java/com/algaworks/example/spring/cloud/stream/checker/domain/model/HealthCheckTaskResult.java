@@ -1,12 +1,16 @@
 package com.algaworks.example.spring.cloud.stream.checker.domain.model;
 
-import com.algaworks.example.spring.cloud.stream.checker.domain.model.valueobject.HealthCheckConfig;
-import com.algaworks.example.spring.cloud.stream.checker.domain.service.HealthResult;
-import lombok.*;
-import org.apache.commons.lang3.Validate;
-
 import java.time.OffsetDateTime;
 import java.util.UUID;
+
+import org.apache.commons.lang3.Validate;
+
+import com.algaworks.example.spring.cloud.stream.checker.domain.model.valueobject.HealthCheckConfig;
+import com.algaworks.example.spring.cloud.stream.checker.domain.service.HealthResult;
+
+import lombok.Builder;
+import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @Setter
@@ -22,7 +26,7 @@ public class HealthCheckTaskResult {
     private Status status;
     private Integer responseTime;
 
-    private HealthCheckTaskResult() {
+    public HealthCheckTaskResult() {
     }
 
     public HealthCheckTaskResult(UUID id, UUID taskId, UUID scheduleId,
