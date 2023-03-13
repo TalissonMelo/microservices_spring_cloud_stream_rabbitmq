@@ -1,9 +1,8 @@
 {
 	"info": {
-		"_postman_id": "6129e90d-c16e-4a9d-a104-d249da717b51",
+		"_postman_id": "2cc59285-2d13-48bc-baf8-ddfa2517568b",
 		"name": "Alga Health Check",
-		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-		"_exporter_id": "4405010"
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
@@ -22,12 +21,12 @@
 							}
 						],
 						"url": {
-							"raw": "http://localhost:8082/v1/apps",
+							"raw": "http://localhost:8080/v1/apps",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"v1",
 								"apps"
@@ -51,12 +50,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/v1/apps",
+							"raw": "http://localhost:8080/v1/apps",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"v1",
 								"apps"
@@ -80,12 +79,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8082/v1/apps/:appId",
+							"raw": "http://localhost:8080/v1/apps/:appId",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"v1",
 								"apps",
@@ -107,12 +106,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/v1/apps/:appId",
+							"raw": "http://localhost:8080/v1/apps/:appId",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"v1",
 								"apps",
@@ -134,12 +133,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8082/v1/apps/:appId",
+							"raw": "http://localhost:8080/v1/apps/:appId",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8082",
+							"port": "8080",
 							"path": [
 								"v1",
 								"apps",
@@ -175,12 +174,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/v1/schedules",
+							"raw": "http://localhost:8080/v1/schedules",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8083",
+							"port": "8080",
 							"path": [
 								"v1",
 								"schedules"
@@ -195,12 +194,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/v1/schedules",
+							"raw": "http://localhost:8080/v1/schedules",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8083",
+							"port": "8080",
 							"path": [
 								"v1",
 								"schedules"
@@ -215,12 +214,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/v1/schedules/:scheduleId",
+							"raw": "http://localhost:8080/v1/schedules/:scheduleId",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8083",
+							"port": "8080",
 							"path": [
 								"v1",
 								"schedules",
@@ -242,12 +241,12 @@
 						"method": "DELETE",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8083/v1/schedules/:scheduleId",
+							"raw": "http://localhost:8080/v1/schedules/:scheduleId",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8083",
+							"port": "8080",
 							"path": [
 								"v1",
 								"schedules",
@@ -278,12 +277,12 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:8083/v1/schedules/:scheduleId",
+							"raw": "http://localhost:8080/v1/schedules/:scheduleId",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8083",
+							"port": "8080",
 							"path": [
 								"v1",
 								"schedules",
@@ -310,12 +309,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8085/v1/metrics",
+							"raw": "http://localhost:8080/v1/metrics",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8085",
+							"port": "8080",
 							"path": [
 								"v1",
 								"metrics"
@@ -330,12 +329,12 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:8085/v1/metrics/events",
+							"raw": "http://localhost:8080/v1/metrics/events",
 							"protocol": "http",
 							"host": [
 								"localhost"
 							],
-							"port": "8085",
+							"port": "8080",
 							"path": [
 								"v1",
 								"metrics",
