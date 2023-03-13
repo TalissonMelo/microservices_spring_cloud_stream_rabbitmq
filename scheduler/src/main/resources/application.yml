@@ -19,6 +19,8 @@ spring:
       function:
         definition: appCreatedEventListener;appUpdatedEventListener
       bindings:
+        healthCheckTaskCommand-out-0:
+          destination: health-check.v1.command.execute-task
         appCreatedEventListener-in-0:
           destination: app.v1.event.app-created
           group: scheduler

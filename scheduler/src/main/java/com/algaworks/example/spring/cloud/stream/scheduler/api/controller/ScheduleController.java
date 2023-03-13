@@ -1,5 +1,21 @@
 package com.algaworks.example.spring.cloud.stream.scheduler.api.controller;
 
+import java.util.List;
+import java.util.UUID;
+
+import javax.validation.Valid;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseStatus;
+import org.springframework.web.bind.annotation.RestController;
+
 import com.algaworks.example.spring.cloud.stream.scheduler.api.model.HealthCheckConfigModel;
 import com.algaworks.example.spring.cloud.stream.scheduler.api.model.ScheduleCreateRequest;
 import com.algaworks.example.spring.cloud.stream.scheduler.api.model.ScheduleModel;
@@ -13,13 +29,8 @@ import com.algaworks.example.spring.cloud.stream.scheduler.domain.repository.Sch
 import com.algaworks.example.spring.cloud.stream.scheduler.domain.service.ScheduleManagementService;
 import com.algaworks.example.spring.cloud.stream.scheduler.domain.service.exception.AppNotFoundException;
 import com.algaworks.example.spring.cloud.stream.scheduler.domain.service.exception.ScheduleNotFoundException;
-import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
 
-import javax.validation.Valid;
-import java.util.List;
-import java.util.UUID;
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/v1/schedules")
