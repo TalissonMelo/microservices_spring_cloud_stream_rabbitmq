@@ -11,6 +11,9 @@ eureka:
 spring:
   application:
     name: ms-scheduler
+  sleuth:
+    sampler:
+      probability: 1.0
   jpa:
     hibernate:
       ddl-auto: update

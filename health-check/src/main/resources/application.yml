@@ -11,6 +11,9 @@ eureka:
 spring:
   application:
     name: ms-health-check
+  sleuth:
+    sampler:
+      probability: 1.0
   rabbitmq:
     password: rabbitmq
     host: localhost

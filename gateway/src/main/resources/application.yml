@@ -1,6 +1,9 @@
 spring:
   application:
     name: ms-gateway
+  sleuth:
+    sampler:
+      probability: 1.0
   cloud:
     gateway:
       discovery:
